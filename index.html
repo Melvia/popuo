@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section>
+    <img src="img/bg.jpg" id="bg">
+    <img src="img/man.png" id="man">
+    <img src="img/clouds_1.png" id="clouds_1">
+    <img src="img/clouds_2.png" id="clouds_2">
+    <h2 id="text">Mountains</h2>
+    <img src="img/mountain_left.png" id="mountain_left">
+    <img src="img/mountain_right.png" id="mountain_right">
+
+</section>
+<div class="sec">
+    <h2>scrolltrigger is awesome</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+        aperiam asperiores aspernatur at autem beatae consequatur, cum cupiditate distinctio dolorem
+        eaque facilis id minus nihil officia possimus provident quidem voluptatum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eaque est et iste nulla possimus similique ullam.
+        Alias atque consectetur dolor ducimus fugiat, fugit harum ipsam, quidem recusandae reiciendis repellat unde velit voluptate.
+        Animi consequuntur cumque dolorum molestias quasi quia voluptatum! Ab adipisci ducimus facilis fuga ipsam itaque nihil
+        officiis ratione rem reprehenderit sunt tempore, voluptatibus? Asperiores aspernatur atque aut autem beatae cupiditate deserunt
+        distinctio doloremque dolorum, ea laudantium libero minima non odio officia quos voluptatum? A assumenda autem cum deserunt dolorem,
+        et ex excepturi exercitationem illo iure libero nisi nobis numquam pariatur perferendis quas reiciendis ut velit vitae voluptatem.
+        Deleniti doloremque exercitationem nam quisquam repellat repudiandae sit voluptatum. Beatae commodi consequuntur dicta eaque enim fugiat
+        mollitia nemo perferendis quisquam, rem, saepe tenetur, voluptas. Blanditiis delectus eius eos eveniet fuga iste mollitia nemo numquam
+        praesentium qui quisquam reprehenderit saepe, sapiente voluptates voluptatum! Animi, atque blanditiis eligendi est ex fuga minima molestiae
+        natus nesciunt praesentium sint temporibus vero. Architecto beatae consequatur cupiditate distinctio dolorem eligendi exercitationem fuga harum
+        id illo inventore ipsa laboriosam libero maiores modi mollitia nam non nulla odio qui reprehenderit, sapiente temporibus totam unde vitae voluptas
+        voluptatum. Dicta dolore doloremque earum eius, et, iure, maxime nulla obcaecati quasi quod sequi veritatis? A accusamus animi consequatur
+        deleniti distinctio, dolorem exercitationem fugiat minus molestiae nam nihil quas qui, quod similique, sit soluta veniam. Architecto aspernatur
+        consequuntur corporis cupiditate deleniti dolor ea, esse et exercitationem explicabo fuga fugit harum illum in magni minus nemo, nesciunt nulla numquam
+        perspiciatis porro quasi quis recusandae repudiandae tempora ullam voluptate. Accusantium cum deleniti explicabo fuga, fugit hic in, laborum, magni molestiae
+        nam natus nostrum obcaecati possimus quaerat quas qui quos recusandae sed sit suscipit! Autem, debitis incidunt quaerat quasi recusandae repellat sunt!
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to("#bg", {scrollTrigger: {scrub: 1}, scale: 1.5})
+
+    gsap.to("#man", {scrollTrigger: {scrub: 1}, scale: 0.5})
+
+    gsap.to("#mountain_left", {scrollTrigger: {scrub: 1}, x: -500})
+
+    gsap.to("#mountain_right", {scrollTrigger: {scrub: 1}, x: 500})
+
+    gsap.to("#clouds_1", {scrollTrigger: {scrub: 1}, x: 200})
+
+    gsap.to("#clouds_2", {scrollTrigger: {scrub: 1}, x: -200})
+
+    gsap.to("#text", {scrollTrigger: {scrub: 1}, y: 500})
+</script>
+
+</body>
+</html>
